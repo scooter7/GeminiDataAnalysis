@@ -328,4 +328,3 @@ else:
 
 # --- Footer ---
 st.markdown("---")
-st.markdown("Built with ❤️ by AI for interactive data analysis.")
