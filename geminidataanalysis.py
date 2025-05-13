@@ -13,7 +13,7 @@ st.set_page_config(layout="wide", page_title="CSV AI Analyzer", page_icon="📊"
 try:
     GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
     genai.configure(api_key=GEMINI_API_KEY)
-    gemini_model = genai.GenerativeModel('gemini-1.5-pro-latest') # Or your preferred Gemini model
+    gemini_model = genai.GenerativeModel('gemini-2.5-pro-preview-05-06') # Or your preferred Gemini model
 except Exception as e:
     st.error(f"Error configuring Gemini API: {e}. Please ensure your API key is set correctly in Streamlit secrets.")
     st.stop()
